@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/main_toolbar"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/top"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <ImageButton
+            android:id="@+id/menu_or_home"
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:layout_weight="0.2"
+
+            android:src="@drawable/ic_menu_black_24dp"
+            android:background="@color/indio"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/login_or_register"
+            android:layout_weight="0.8"
+            android:visibility="visible"
+            android:textSize="@dimen/text_size_large"
+            />
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

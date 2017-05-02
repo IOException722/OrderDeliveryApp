@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">OrderDeliveryAndroidApp</string>
+    <string name="app_name">Order Delivery</string>
+    <string name="login_or_register">Sign In Or Register</string>
+    <string name="enter_text">Please enter your phone number</string>
 </resources>
