@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,18 +21,42 @@
         android:layout_width="match_parent"
         android:textSize="@dimen/text_size_large"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/top"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
         android:layout_below="@id/tb_lin"
-        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
         android:text="@string/enter_text"/>
+
+
+    <EditText
+        android:id="@+id/name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_below="@id/tv_enter_text"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp"
+        android:maxLines="1"
+
+        android:layout_gravity="top|left"
+        android:textSize="@dimen/text_size_large"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_below="@id/tv_enter_text"
+        android:layout_below="@id/name_text"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+
+        android:id="@+id/lin_lyt_phone"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -42,6 +67,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/phone_text"
             android:hint="Phone number"
             android:gravity="left|center_vertical"
             android:paddingLeft="10dp"
@@ -51,5 +77,18 @@
             android:inputType="number"
            />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_lyt_phone"
+        android:text="Submit"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_green"
+        />
 
 </RelativeLayout>
